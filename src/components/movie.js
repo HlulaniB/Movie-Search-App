@@ -8,7 +8,7 @@ function Movie(){
     console.log("API key:", api_key);
 const fetchapi=(e)=>{
      e.preventDefault();
-   fetch(`http://www.omdbapi.com/?apikey=${api_key}&t=${movie}`)
+   fetch(`https://www.omdbapi.com/?apikey=${api_key}&t=${movie}`)
    .then(response=> response.json())
    .then(data=>setmovies(data))
    .catch(error=>console.log(error));
