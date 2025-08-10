@@ -35,7 +35,7 @@ return(
         <section>
           
                 <section className="movie" key={data.Title}>
-                    <img src={data.Poster}/>
+                    <img src={data.Poster} alt={data.Title}/>
                     <h1>{data.Title}</h1>
                     <p>{data.Year}</p>
                     <p>Director:{data.Director}</p>
